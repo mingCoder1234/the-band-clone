@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+* {
+  /*The web contain two main color: white and black*/
+  --color-1: #fff;
+  --color-2: #000;
+  --sold-out: #f44336;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}

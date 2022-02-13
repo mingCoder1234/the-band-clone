@@ -1,0 +1,27 @@
+@import url('./css-module/nav-bar/nav-res.css');
+@import url('./css-module/nav-bar/nav.css');
+@import url('./css-module/slider/slider.css');
+@import url('./css-module/intro/intro.css');
+@import url('./css-module/tour-date/tour-date.css');
+@import url('./css-module/footer/footer.css');
+@import url('./css-module/pop-up/pop-up.css');
+@import url('./css-module/contact/contact.css');
+
+main {
+  margin-top: 45px;
+  height: max-content;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 723px) {
+  main {
+    margin: 0;
+  }
+}
+
+.map {
+  width: 100%;
+  padding-top: 57%;
+  background: url('../img/map.jpg') top center / cover no-repeat;
+}

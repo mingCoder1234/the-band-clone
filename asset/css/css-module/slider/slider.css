@@ -1,0 +1,70 @@
+@import url('../asset.css');
+.slider {
+  width: 500%;
+  display: flex;
+}
+.slider-container {
+  overflow: hidden;
+}
+.slider-slide {
+  width: 20%;
+  padding-top: 10%;
+  position: relative;
+}
+
+.slider-content {
+  position: absolute;
+  bottom: 60px;
+  color: var(--color-1);
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+}
+.slider-content > h2 {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.slider-content > p {
+  font-weight: 600;
+}
+
+.slider-slide-chicago {
+  background: url('../../../img/chicago.jpg') top center / cover no-repeat;
+}
+.slider-slide-la {
+  background: url('../../../img/la.jpg') top center / cover no-repeat;
+}
+.slider-slide-ny {
+  background: url('../../../img/ny.jpg') top center / cover no-repeat;
+}
+
+.slider-btn {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.slider-btn > button {
+  padding: 30px 10px;
+  border-radius: 0;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.13);
+  font-size: 28px;
+}
+.slider-btn > button:hover {
+  background-color: rgba(255, 255, 255, 0.103);
+  color: rgba(255, 255, 255, 0.267);
+}
+
+@media (max-width: 768px) {
+  .slider-btn {
+    top: 50%;
+  }
+  .slider-content {
+    display: none;
+  }
+}

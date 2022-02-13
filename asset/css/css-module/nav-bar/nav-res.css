@@ -1,0 +1,58 @@
+@import url('../asset.css');
+
+.navbar-responsive {
+  display: none;
+  color: var(--color-1);
+  justify-content: space-between;
+  position: relative;
+}
+.navbar-responsive a {
+  color: var(--color-1);
+  padding: 0 15px;
+  width: max-content;
+}
+.nav-bars {
+  width: 50px !important;
+  font-size: 25px;
+  cursor: pointer;
+}
+.nav-res-search {
+  margin-left: auto;
+}
+.nav-res-items {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  background-color: var(--color-2);
+  width: 40%;
+  transition: ease 0.3s;
+  transform: translateX(100%);
+}
+
+.nav-res-item {
+  padding: 8px 0 !important;
+  width: 100%;
+  font-size: 20px;
+  transition: ease 0.3s;
+  cursor: pointer;
+  display: flex;
+  width: 100% !important;
+}
+.nav-res-item:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+
+.nav-res-items-active {
+  transform: translateX(0);
+}
+@media screen and (max-width: 723px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-responsive {
+    display: flex;
+  }
+}
